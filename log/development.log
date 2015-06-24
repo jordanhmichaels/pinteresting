@@ -1810,3 +1810,63 @@ Processing by PinsController#show as HTML
   Rendered pins/show.html.erb within layouts/application (1.9ms)
   Rendered layouts/_header.html.erb (1.4ms)
 Completed 200 OK in 77ms (Views: 71.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-23 22:33:40 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 98ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-23 22:33:43 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (30.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 104ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-06-23 22:33:46 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5J8toGbqb8JO90jrjVrwia3QPhrQghcO+Ptxzb0eaIUA01FfueWTfZFIM2RfrvpTBsYNsKx+srCVdDzZr539Wg==", "user"=>{"email"=>"jordanmichaels@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jordanmichaels@gmail.com"]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.6ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5J8toGbqb8JO90jrjVrwia3QPhrQghcO+Ptxzb0eaIUA01FfueWTfZFIM2RfrvpTBsYNsKx+srCVdDzZr539Wg==", "user"=>{"email"=>"jordanmichaels@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 130ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-06-23 22:33:50 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fKbS+Ls70P4d7juAA4Lglbdl1cFydQ3efgA4vDo3gQSY6q4HZDQsQcJRQA/RdupPHHPmaw6JqGATj3WoKLQU2w==", "user"=>{"email"=>"jordanmichaels@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jordanmichaels@gmail.com"]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fKbS+Ls70P4d7juAA4Lglbdl1cFydQ3efgA4vDo3gQSY6q4HZDQsQcJRQA/RdupPHHPmaw6JqGATj3WoKLQU2w==", "user"=>{"email"=>"jordanmichaels@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 143ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-06-23 22:33:54 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c5C2bT/fLaPcQwqbblb+K/2MCY6NQibnOkyLycfZZjaX3MqS4NDRHAP8cRS8ovTxVpo6JPG+g1lXw8bd1Vrz6Q==", "user"=>{"email"=>"jordanmichaels+1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jordanmichaels+1@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-06-24 04:37:35.029256"], ["current_sign_in_at", "2015-06-24 05:33:54.407268"], ["sign_in_count", 4], ["updated_at", "2015-06-24 05:33:54.408476"], ["id", 1]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 82ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/" for ::1 at 2015-06-23 22:33:54 -0700
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 68ms (Views: 67.4ms | ActiveRecord: 0.3ms)
