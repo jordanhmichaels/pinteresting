@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+
+$font-family-sans-serif: 'Oxygen', Arial, sans-serif;
+$body-bg: #ecf0f1;
+$navbar-height: 45px;
+$navbar-default-bg: white;
+$navbar-default-link-color: #9b59b6;
+$navbar-default-link-hover-color: #2c3e50;
+$navbar-default-brand-color: #9b59b6;
+$brand-primary: #9b59b6;
+$jumbotron-bg: white;
+
+@import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
