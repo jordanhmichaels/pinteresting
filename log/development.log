@@ -6545,3 +6545,1053 @@ Processing by PinsController#show as HTML
   Rendered pins/show.html.erb within layouts/application (3.2ms)
   Rendered layouts/_header.html.erb (0.4ms)
 Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins" for ::1 at 2015-06-26 09:37:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.5ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (49.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 365ms (Views: 346.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-26 09:37:04 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-26 09:37:04 -0700
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-26 09:37:04 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-26 09:37:04 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-26 09:37:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-26 09:37:04 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-26 09:37:04 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-26 09:37:04 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-26 09:37:04 -0700
+
+
+Started GET "/assets/pins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-26 09:37:04 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-26 09:37:04 -0700
+
+
+Started GET "/pins/5" for ::1 at 2015-06-26 09:37:04 -0700
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 5]]
+Completed 404 Not Found in 7ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Pin with 'id'=5):
+  app/controllers/pins_controller.rb:45:in `set_pin'
+
+
+  Rendered /Users/jordan/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/jordan/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/jordan/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jordan/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.7ms)
+
+
+Started GET "/pins/1" for ::1 at 2015-06-26 09:37:06 -0700
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 103ms (Views: 101.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-26 09:37:07 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-26 09:37:07 -0700
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-26 09:37:07 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-26 09:37:07 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-26 09:37:07 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-26 09:37:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-26 09:37:07 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-26 09:37:07 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-26 09:37:07 -0700
+
+
+Started GET "/assets/pins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-26 09:37:07 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-26 09:37:07 -0700
+
+
+Started GET "/pins" for ::1 at 2015-06-26 09:37:10 -0700
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-26 09:37:11 -0700
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/_form.html.erb (34.3ms)
+  Rendered pins/new.html.erb within layouts/application (36.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 101ms (Views: 90.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/pins" for ::1 at 2015-06-26 09:37:18 -0700
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3jDv5l5AQITsthtjezycoV94ONRSyxQWA6mCipEMJ+5sX5HKaw1xvWMEA3+qQ/m2HhIsWtDNpaTdaLvZ2WnPfQ==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fa98fe0b3d0 @tempfile=#<Tempfile:/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/RackMultipart20150626-616-1uh0eli.jpg>, @original_filename="2014-06-06 21.01.39.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"2014-06-06 21.01.39.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"Test 2"}, "commit"=>"Create Pin"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: file -b --mime '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/7926ef5a5e3dfa1de2ed9f8f364b15e220150626-616-13xw3in.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/5a682e87bf9be5bb515a18cde04a43d920150626-616-ruts6w.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/5a682e87bf9be5bb515a18cde04a43d920150626-616-ruts6w.jpg[0]'
+Command :: convert '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/5a682e87bf9be5bb515a18cde04a43d920150626-616-ruts6w.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/b4d42c533fd27868918cb66ddffba85f20150626-616-7xpca2'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/5a682e87bf9be5bb515a18cde04a43d920150626-616-ruts6w.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/5a682e87bf9be5bb515a18cde04a43d920150626-616-ruts6w.jpg[0]'
+Command :: convert '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/5a682e87bf9be5bb515a18cde04a43d920150626-616-ruts6w.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/b4d42c533fd27868918cb66ddffba85f20150626-616-1ktnhyv'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/7926ef5a5e3dfa1de2ed9f8f364b15e220150626-616-1w1iw8v.jpg'
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "Test 2"], ["image_file_name", "2014-06-06_21.01.39.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 1785752], ["image_updated_at", "2015-06-26 16:37:18.348850"], ["user_id", 1], ["created_at", "2015-06-26 16:37:19.820971"], ["updated_at", "2015-06-26 16:37:19.820971"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/2
+Completed 302 Found in 1495ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/pins/2" for ::1 at 2015-06-26 09:37:19 -0700
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 74.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-26 09:49:23 -0700
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/2" for ::1 at 2015-06-26 09:49:27 -0700
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-26 09:49:28 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-26 09:49:28 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-26 09:49:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-26 09:49:28 -0700
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-26 09:49:28 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-26 09:49:28 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-26 09:49:28 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-26 09:49:28 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-26 09:49:28 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-26 09:49:28 -0700
+
+
+Started GET "/assets/pins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-26 09:49:28 -0700
+
+
+Started GET "/" for ::1 at 2015-06-26 10:09:03 -0700
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-28 20:17:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (26.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 604ms (Views: 590.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-06-28 20:17:02 -0700
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:17:07 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.4ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (20.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 90ms (Views: 84.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:30:04 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (30.0ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 1849ms (Views: 1838.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/assets/pins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:30:06 -0700
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:31:43 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 81ms (Views: 79.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:31:43 -0700
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:31:43 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-06-28 20:31:43 -0700
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-28 20:31:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-28 20:31:43 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-28 20:31:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-28 20:31:43 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-28 20:31:43 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-28 20:31:43 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-28 20:31:43 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:31:43 -0700
+
+
+Started GET "/assets/pins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:31:44 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-28 20:31:44 -0700
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:31:54 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/pins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-28 20:31:54 -0700
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:33:17 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/pins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-28 20:33:17 -0700
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:34:47 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/pins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-28 20:34:47 -0700
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:36:10 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 125ms (Views: 123.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/pins.self-ba78a1d1f244265ffbe63626a4e99a1e78df1203f400b147cc69f798514758cc.css?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/pins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-28 20:36:10 -0700
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:36:40 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 111ms (Views: 110.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/pins.self-dbe08535dbc3a370cda16d900f0b66f04f5ffaa14e230ac6c270aef1f8ca2527.css?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/pins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-28 20:36:40 -0700
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:43:15 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (SyntaxError: [stdin]:7:1: unexpected indentation):
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    9: </head>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2554477141406841528_70277506823640'
+
+
+  Rendered /Users/jordan/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/jordan/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/jordan/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/jordan/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.9ms)
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:43:49 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 212ms (Views: 211.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/pins.self-dbe08535dbc3a370cda16d900f0b66f04f5ffaa14e230ac6c270aef1f8ca2527.css?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-28 20:43:49 -0700
+
+
+Started GET "/pins/new" for ::1 at 2015-06-28 20:44:14 -0700
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/_form.html.erb (27.4ms)
+  Rendered pins/new.html.erb within layouts/application (29.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 116ms (Views: 103.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/pins" for ::1 at 2015-06-28 20:44:24 -0700
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8RGe0qEsWIkni+3l3jn+sj64VtAkkPb0ClyDIAfmNFFDfuD+lGFpsKg59fkPRpulf9JCXqaWR0bUnbpzT4Pcwg==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd58bef2618 @tempfile=#<Tempfile:/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/RackMultipart20150628-1503-iqmqg6.jpg>, @original_filename="2014-06-06 23.15.25.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"2014-06-06 23.15.25.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"Another"}, "commit"=>"Create Pin"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: file -b --mime '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/fca231049b3e66a6c8c417ca6998013720150628-1503-72q8wr.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4008d1493c5b3d7e7cef163fd399c70720150628-1503-19mf0kc.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4008d1493c5b3d7e7cef163fd399c70720150628-1503-19mf0kc.jpg[0]'
+Command :: convert '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4008d1493c5b3d7e7cef163fd399c70720150628-1503-19mf0kc.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/03700e48a18f482f4083df3144e6e1e220150628-1503-1l6o242'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4008d1493c5b3d7e7cef163fd399c70720150628-1503-19mf0kc.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4008d1493c5b3d7e7cef163fd399c70720150628-1503-19mf0kc.jpg[0]'
+Command :: convert '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4008d1493c5b3d7e7cef163fd399c70720150628-1503-19mf0kc.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/03700e48a18f482f4083df3144e6e1e220150628-1503-xc63ca'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/fca231049b3e66a6c8c417ca6998013720150628-1503-mv7oka.jpg'
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "Another"], ["image_file_name", "2014-06-06_23.15.25.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 1341001], ["image_updated_at", "2015-06-29 03:44:24.462678"], ["user_id", 1], ["created_at", "2015-06-29 03:44:25.363774"], ["updated_at", "2015-06-29 03:44:25.363774"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/3
+Completed 302 Found in 924ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/pins/3" for ::1 at 2015-06-28 20:44:25 -0700
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 76ms (Views: 74.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-28 20:44:27 -0700
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/_form.html.erb (1.6ms)
+  Rendered pins/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/pins" for ::1 at 2015-06-28 20:44:36 -0700
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZokEsL0wwolAR6uR2jI15gmzaQD52DsWvTtnEf9cE/PU5nqciH3zsM/1s40LTVDxSNl9jnveiqRj+l5Ctzn7YA==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd587c1e378 @tempfile=#<Tempfile:/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/RackMultipart20150628-1503-1ivccg8.jpg>, @original_filename="10517462_10102900064549225_1486031310549431029_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"10517462_10102900064549225_1486031310549431029_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"Pin"}, "commit"=>"Create Pin"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: file -b --mime '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4fdfedec21cc25c77143f149e1fbd2a620150628-1503-1wudh88.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4fdfedec21cc25c77143f149e1fbd2a620150628-1503-p0v0rg.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4fdfedec21cc25c77143f149e1fbd2a620150628-1503-p0v0rg.jpg[0]'
+Command :: convert '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4fdfedec21cc25c77143f149e1fbd2a620150628-1503-p0v0rg.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/db2c9d2202ea52fe6c10503ced6daa0520150628-1503-89yu9z'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4fdfedec21cc25c77143f149e1fbd2a620150628-1503-p0v0rg.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4fdfedec21cc25c77143f149e1fbd2a620150628-1503-p0v0rg.jpg[0]'
+Command :: convert '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4fdfedec21cc25c77143f149e1fbd2a620150628-1503-p0v0rg.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/db2c9d2202ea52fe6c10503ced6daa0520150628-1503-1vhkxn1'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4fdfedec21cc25c77143f149e1fbd2a620150628-1503-pjsurj.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "Pin"], ["image_file_name", "10517462_10102900064549225_1486031310549431029_n.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 25216], ["image_updated_at", "2015-06-29 03:44:36.271158"], ["user_id", 1], ["created_at", "2015-06-29 03:44:36.396121"], ["updated_at", "2015-06-29 03:44:36.396121"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/4
+Completed 302 Found in 145ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/pins/4" for ::1 at 2015-06-28 20:44:36 -0700
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins/" for ::1 at 2015-06-28 20:44:39 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:44:39 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-28 20:47:51 -0700
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/_form.html.erb (1.4ms)
+  Rendered pins/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 159ms (Views: 156.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-28 20:47:51 -0700
+Processing by PinsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.erb (2.0ms)
+  Rendered pins/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 64ms (Views: 61.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for ::1 at 2015-06-28 20:47:51 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-06-28 20:47:51 -0700
+
+
+Started POST "/pins" for ::1 at 2015-06-28 20:47:59 -0700
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptkIlifpNWWWB4CnjC7sTaAOrGc9VznaHph5K7dr06AUtna6EqQEXBm1mLtdUYla4WS46b9RiGjAWUB4/w47Mw==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd58b9c9dd0 @tempfile=#<Tempfile:/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/RackMultipart20150628-1503-jj7k0f.png>, @original_filename="Jordan Signature.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"Jordan Signature.png\"\r\nContent-Type: image/png\r\n">, "description"=>"sig"}, "commit"=>"Create Pin"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: file -b --mime '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/474e78227ec3f8bbdb0b1a845d527d3120150628-1503-vp52is.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4f2286a423caf8bd5600029424ced43020150628-1503-u59xlg.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4f2286a423caf8bd5600029424ced43020150628-1503-u59xlg.png[0]'
+Command :: convert '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4f2286a423caf8bd5600029424ced43020150628-1503-u59xlg.png[0]' -auto-orient -resize "300x300>" '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/924a1719f147ce7c8e6e01ea507d7b2720150628-1503-1t57tdd'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4f2286a423caf8bd5600029424ced43020150628-1503-u59xlg.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4f2286a423caf8bd5600029424ced43020150628-1503-u59xlg.png[0]'
+Command :: convert '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/4f2286a423caf8bd5600029424ced43020150628-1503-u59xlg.png[0]' -auto-orient -resize "100x100>" '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/924a1719f147ce7c8e6e01ea507d7b2720150628-1503-1j5esm6'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/474e78227ec3f8bbdb0b1a845d527d3120150628-1503-nlan8o.png'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["description", "sig"], ["image_file_name", "Jordan_Signature.png"], ["image_content_type", "image/png"], ["image_file_size", 17784], ["image_updated_at", "2015-06-29 03:47:59.298442"], ["user_id", 1], ["created_at", "2015-06-29 03:47:59.445634"], ["updated_at", "2015-06-29 03:47:59.445634"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/5
+Completed 302 Found in 159ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/pins/5" for ::1 at 2015-06-28 20:47:59 -0700
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 83ms (Views: 82.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:48:04 -0700
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 91ms (Views: 89.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-28 20:48:11 -0700
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/_form.html.erb (1.3ms)
+  Rendered pins/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 69ms (Views: 66.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/pins" for ::1 at 2015-06-28 20:48:44 -0700
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"785HgxrNJsej9xxWfczIZTReEzBZhhSu7eBD+nLIWWZdoTmvL4AX/ixFBEqss61ydTQHvtuApRwzIXqpOq2x9Q==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fd58bdbbdf8 @tempfile=#<Tempfile:/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/RackMultipart20150628-1503-1b0e7if.JPG>, @original_filename="IMG_2063.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"IMG_2063.JPG\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"CJ05"}, "commit"=>"Create Pin"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: file -b --mime '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/d10bd0512eae33e7dc2eeb2ae185036120150628-1503-19g9o9f.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/d10bd0512eae33e7dc2eeb2ae185036120150628-1503-1h0gn4z.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/d10bd0512eae33e7dc2eeb2ae185036120150628-1503-1h0gn4z.JPG[0]'
+Command :: convert '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/d10bd0512eae33e7dc2eeb2ae185036120150628-1503-1h0gn4z.JPG[0]' -auto-orient -resize "300x300>" '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/5db89dfedb0ce62f3002204c9a59c10620150628-1503-zhg990'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/d10bd0512eae33e7dc2eeb2ae185036120150628-1503-1h0gn4z.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/d10bd0512eae33e7dc2eeb2ae185036120150628-1503-1h0gn4z.JPG[0]'
+Command :: convert '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/d10bd0512eae33e7dc2eeb2ae185036120150628-1503-1h0gn4z.JPG[0]' -auto-orient -resize "100x100>" '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/5db89dfedb0ce62f3002204c9a59c10620150628-1503-111uiym'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/y0/c8b0q88914qddgd1pwd14rvr0000gn/T/d10bd0512eae33e7dc2eeb2ae185036120150628-1503-12ks8v9.JPG'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "CJ05"], ["image_file_name", "IMG_2063.JPG"], ["image_content_type", "image/jpeg"], ["image_file_size", 7076084], ["image_updated_at", "2015-06-29 03:48:44.989574"], ["user_id", 1], ["created_at", "2015-06-29 03:48:47.652419"], ["updated_at", "2015-06-29 03:48:47.652419"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/6
+Completed 302 Found in 2705ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/pins/6" for ::1 at 2015-06-28 20:48:47 -0700
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:48:53 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/pins.self-dbe08535dbc3a370cda16d900f0b66f04f5ffaa14e230ac6c270aef1f8ca2527.css?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-06-28 20:48:54 -0700
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:49:41 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 78.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/pins.self-dbe08535dbc3a370cda16d900f0b66f04f5ffaa14e230ac6c270aef1f8ca2527.css?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-06-28 20:49:41 -0700
+
+
+Started GET "/pins" for ::1 at 2015-06-28 20:51:47 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 85.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap_and_customization.self-b794fae97d6d4108e14b09340f3a064950a76df97463391f236f07b66966fd3a.css?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/pins.self-dbe08535dbc3a370cda16d900f0b66f04f5ffaa14e230ac6c270aef1f8ca2527.css?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-28 20:51:47 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-06-28 20:51:47 -0700
